@@ -1,0 +1,110 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="onvif.discovery.dll" />
+    <None Remove="onvif.services.dll" />
+    <None Remove="onvif.session.dll" />
+    <None Remove="onvif.utils.dll" />
+    <None Remove="utils.async.dll" />
+    <None Remove="utils.common.dll" />
+    <None Remove="utils.diagnostics.dll" />
+    <None Remove="utils.fsharp.dll" />
+    <None Remove="utils.linq.dll" />
+    <None Remove="utils.xml.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="onvif.discovery.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onvif.services.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onvif.session.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onvif.utils.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="utils.async.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="utils.common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="utils.diagnostics.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="utils.fsharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="utils.linq.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="utils.xml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="9.0.202" />
+    <PackageReference Include="LibVLCSharp" Version="3.9.3" />
+    <PackageReference Include="LibVLCSharp.Forms" Version="3.9.3" />
+    <PackageReference Include="LibVLCSharp.WinForms" Version="3.9.3" />
+    <PackageReference Include="SharpOnvifClient" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifClient.DeviceMgmt" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifClient.Display" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifClient.Events" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifClient.Media" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifClient.Media2" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifClient.PTZ" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifClient.Search" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifCommon" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifServer" Version="0.1.4" />
+    <PackageReference Include="SharpOnvifServer.DeviceMgmt" Version="0.1.4" />
+    <PackageReference Include="System.Reactive" Version="2.0.20823.0" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="onvif.discovery">
+      <HintPath>onvif.discovery.dll</HintPath>
+    </Reference>
+    <Reference Include="onvif.services">
+      <HintPath>onvif.services.dll</HintPath>
+    </Reference>
+    <Reference Include="onvif.session">
+      <HintPath>onvif.session.dll</HintPath>
+    </Reference>
+    <Reference Include="onvif.utils">
+      <HintPath>onvif.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="utils.async">
+      <HintPath>utils.async.dll</HintPath>
+    </Reference>
+    <Reference Include="utils.common">
+      <HintPath>utils.common.dll</HintPath>
+    </Reference>
+    <Reference Include="utils.diagnostics">
+      <HintPath>utils.diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="utils.fsharp">
+      <HintPath>utils.fsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="utils.linq">
+      <HintPath>utils.linq.dll</HintPath>
+    </Reference>
+    <Reference Include="utils.xml">
+      <HintPath>utils.xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
