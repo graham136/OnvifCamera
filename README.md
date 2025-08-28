@@ -1,5 +1,5 @@
 # OnvifCamera
-<p>Connect a rtsb camerafeed using LibVlc libraries and displaying it in winforms</p>
+<p>Connect a rtsp camera feed using LibVlc libraries and displaying it in winforms</p>
 <p>https://www.nuget.org/packages/LibVLCSharp</p>
 <p>https://github.com/videolan/libvlcsharp</p>
 <p>Using Onvif Device Manager to subscribe to events on the selected camera</p>
